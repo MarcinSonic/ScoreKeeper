@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".40"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baby" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="Me"
+                android:textColor="#616161"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/me_fedding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="52sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="6dp"
+                android:background="#00E5FF"
+                android:onClick="addMeFedding"
+                android:text="Fedding" />
+
+            <TextView
+                android:id="@+id/me_diaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="52sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="6dp"
+                android:background="#00E5FF"
+                android:onClick="addMeDiaper"
+                android:text="Change Diaper" />
+
+            <TextView
+                android:id="@+id/me_cuddling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="52sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="6dp"
+                android:background="#00E5FF"
+                android:onClick="addMeCuddling"
+                android:text="Cuddling" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="My Wife"
+                android:textColor="#616161"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/wife_fedding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="52sp" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="6dp"
+                android:background="#FF4081"
+                android:onClick="addWifeFedding"
+                android:text="Fedding" />
+
+            <TextView
+                android:id="@+id/wife_diaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="52sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="6dp"
+                android:background="#FF4081"
+                android:onClick="addWifeDiaper"
+                android:text="Change Diaper" />
+
+            <TextView
+                android:id="@+id/wife_cuddling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="52sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="6dp"
+                android:background="#FF4081"
+                android:onClick="addWifeCuddling"
+                android:text="Cuddling" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:onClick="reset"
+        android:text="Next Night (reset)" />
+</RelativeLayout>
